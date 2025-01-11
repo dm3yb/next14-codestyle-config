@@ -4,6 +4,9 @@
   "description": "This package contains the ESLint and Prettier configuration for modern Next.js v14 projects.",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"No tests specified\" && exit 0",
+    "lint": "eslint .",
+    "format": "prettier --write --ignore-unknown .",
     "semantic-release": "semantic-release"
   },
   "author": "Dmitry Bobryshev <dmitry.b09@gmail.com> (https://dm3yb.dev)",
@@ -22,18 +25,15 @@
   },
   "files": [
     "index.js",
+    "prettier.config.js",
+    ".eslintrc.js",
     "README.md"
   ],
   "eslintConfig": {
-    "extends": "./index.js"
+    "extends": "./.eslintrc.js"
   },
+  "prettier": "./prettier.config.js",
   "dependencies": {
-    "@next/eslint-plugin-next": "^14.2.13",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.37.3",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-unicorn": "^56.0.1",
     "prettier-plugin-tailwindcss": "^0.6.9"
   },
   "devDependencies": {
@@ -43,7 +43,13 @@
   },
   "peerDependencies": {
     "eslint": "^8.0.0",
-    "prettier": ">= 3.3.3"
+    "prettier": ">= 3.3.3",
+    "@next/eslint-plugin-next": "^14.2.13",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-unicorn": "^56.0.1"
   },
   "keywords": [
     "nextjs",
