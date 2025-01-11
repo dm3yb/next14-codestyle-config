@@ -3,5 +3,5 @@ const prettierConfig = require('./prettier.config.js');
 
 module.exports = {
   eslint: eslintConfig,
-  prettier: prettierConfig,
+  prettier: prettierConfig
 };

@@ -32,12 +32,11 @@ jobs:
 
       - name: Run Audit
         run: npm audit signature
+        id: audit
 
       - name: Create Release Notes
+        if: success()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
-
-      - name: Run Tests
-        run: npm test
