@@ -15,6 +15,9 @@
     "type": "git",
     "url": "git+https://github.com/dm3yb/nextjs-codestyle-config.git"
   },
+  "publishConfig": {
+    "@dm3yb:registry": "https://npm.pkg.github.com"
+  },
   "prettier": "./prettier.config.js",
   "eslintConfig": {
     "extends": "./eslint.config.js"
