@@ -1,46 +1,12 @@
 # Node.js related files
 node_modules/
-npm-debug.log*
-
-# Logs
-logs/
-*.log
-
-# Development and build files
 dist/
-build/
-.next/
-out/
-coverage/
-*.tmp
-*.cache
 
-# Configuration and temporary files
-.prettierrc
-.prettierignore
-.eslintrc
-*.env
-*.env.*.local
+# Editor and OS-specific files
+.DS_Store
+Thumbs.db
 .vscode/
 .idea/
-
-# Test files
-__tests__/
-test/
-*.test.js
-*.test.ts
-
-# Ignore source code if it's bundled
-src/
-*.jsx
-*.tsx
-
-# Ignore lock files (optional, depending on your workflow)
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-
-# Ignore Git-specific files
-.git/
-.gitattributes
-.gitignore
+*.swp
+*.swo
+*.iml
