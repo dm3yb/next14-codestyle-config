@@ -17,7 +17,7 @@ module.exports = {
     "react/jsx-key": "error",
     "react-hooks/exhaustive-deps": "error",
     "no-unused-vars": [
-      "warn",
+      "error",
       {
         args: "after-used",
         caughtErrors: "none",

@@ -16,6 +16,10 @@
     "access": "public",
     "dm3yb:registry": "https://npm.pkg.github.com"
   },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.2.13",
     "eslint": "^8.0.0",
