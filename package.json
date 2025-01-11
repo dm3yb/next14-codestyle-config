@@ -4,19 +4,13 @@
   "description": "This package contains the ESLint and Prettier configuration for modern Next.js projects.",
   "main": "index.js",
   "scripts": {
-    "lint": "next lint",
-    "prettier:fix": "prettier --write --ignore-unknown .",
-    "prettier:check": "prettier --check --ignore-unknown .",
-    "codestyle:test": "lint && prettier:check"
+    "postinstall": "npm install --save-dev eslint prettier"
   },
   "author": "Dmitry Bobryshev (dm3yb)",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dm3yb/nextjs-codestyle-config.git"
-  },
-  "publishConfig": {
-    "@dm3yb:registry": "https://npm.pkg.github.com"
   },
   "prettier": "./prettier.config.js",
   "eslintConfig": {
