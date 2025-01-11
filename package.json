@@ -4,7 +4,8 @@
   "description": "This package contains the ESLint and Prettier configuration for modern Next.js projects.",
   "main": "index.js",
   "scripts": {
-    "release": "npm run build"
+    "build": "echo 'No build step required.'",
+    "release": "npm run build && semantic-release"
   },
   "author": "Dmitry Bobryshev (dm3yb)",
   "license": "MIT",
@@ -16,6 +17,11 @@
     "access": "public",
     "dm3yb:registry": "https://npm.pkg.github.com"
   },
+  "files": [
+    "README.md",
+    "eslint.config.js",
+    "prettier.config.js"
+  ],
   "prettier": "./prettier.config.js",
   "eslintConfig": {
     "extends": "./eslint.config.js"
@@ -26,7 +32,9 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-unicorn": "^56.0.1",
     "prettier": "^3.4.2",
-    "prettier-plugin-tailwindcss": "^0.6.9"
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "semantic-release": "^24.2.1"
+
   },
   "peerDependencies": {
     "@next/eslint-plugin-next": "^15",
