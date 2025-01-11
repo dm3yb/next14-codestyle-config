@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "This package contains the ESLint and Prettier configuration for modern Next.js v14 projects.",
   "main": "index.js",
-  "module": "index.js",
   "scripts": {
     "format": "prettier --write --ignore-unknown .",
     "semantic-release": "semantic-release"
