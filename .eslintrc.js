@@ -1,3 +1,4 @@
+/** @type { import("eslint").Linter.Config[] } */
 module.exports = {
   extends: [
     'next',
@@ -7,6 +8,19 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:react-hooks/recommended'
   ],
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    requireConfigFile: false,
+    ecmaVersion: 2021,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+      decorators: true
+    },
+    babelOptions: {
+      plugins: [['@babel/plugin-proposal-decorators', { legacy: true }]]
+    }
+  },
   plugins: ['react', '@next/next', 'unicorn', 'react-hooks'],
   rules: {
     '@next/next/no-img-element': 'warn',
@@ -43,8 +57,9 @@ module.exports = {
         singleQuote: true,
         arrowParens: 'always',
         trailingComma: 'none',
-        printWidth: 100,
+        printWidth: 90,
         tabWidth: 2,
+        semi: true,
         plugins: ['prettier-plugin-tailwindcss']
       }
     ],
