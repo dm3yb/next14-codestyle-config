@@ -4,7 +4,7 @@
   "description": "This package contains the ESLint and Prettier configuration for modern Next.js projects.",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm install --save-dev eslint prettier"
+    "release": "npm run build"
   },
   "author": "Dmitry Bobryshev (dm3yb)",
   "license": "MIT",
@@ -13,6 +13,7 @@
     "url": "git+https://github.com/dm3yb/nextjs-codestyle-config.git"
   },
   "publishConfig": {
+    "access": "public",
     "dm3yb:registry": "https://npm.pkg.github.com"
   },
   "prettier": "./prettier.config.js",
@@ -21,7 +22,7 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^15.1.4",
-    "eslint": "^8",
+    "eslint": "^8.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-unicorn": "^56.0.1",
     "prettier": "^3.4.2",
