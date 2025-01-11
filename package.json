@@ -4,7 +4,7 @@
   "description": "This package contains the ESLint and Prettier configuration for modern Next.js v14 projects.",
   "main": "index.js",
   "scripts": {
-    "release": "semantic-release"
+    "semantic-release": "semantic-release"
   },
   "author": "Dmitry Bobryshev <dmitry.b09@gmail.com> (https://dm3yb.dev)",
   "license": "MIT",
