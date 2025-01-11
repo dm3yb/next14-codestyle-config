@@ -34,12 +34,3 @@ Thumbs.db
 *.swp
 *.swo
 *.iml
-
-# Test and Coverage reports
-coverage/
-*.lcov
-
-# Ignore lock files (optional, depending on your workflow)
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
