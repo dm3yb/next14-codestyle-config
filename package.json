@@ -1,7 +1,7 @@
 {
-  "name": "@dm3yb/nextjs-codestyle-config",
-  "version": "0.0.1",
-  "description": "This package contains the ESLint and Prettier configuration for modern Next.js projects.",
+  "name": "@dm3yb/next14-codestyle-config",
+  "version": "1.0.0",
+  "description": "This package contains the ESLint and Prettier configuration for modern Next.js v14 projects.",
   "main": "index.js",
   "scripts": {
     "semantic-release": "semantic-release"
@@ -16,41 +16,26 @@
     "access": "public",
     "dm3yb:registry": "https://npm.pkg.github.com"
   },
-  "files": [
-    "README.md",
-    "eslint.config.js",
-    "prettier.config.js"
-  ],
-  "prettier": "./prettier.config.js",
-  "eslintConfig": {
-    "extends": "./eslint.config.js"
-  },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^15.1.4",
+    "@next/eslint-plugin-next": "^14.2.13",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-unicorn": "^56.0.1",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
     "semantic-release": "^24.2.1"
-
-  },
-  "peerDependencies": {
-    "@next/eslint-plugin-next": "^15",
-    "eslint": "^8",
-    "eslint-config-prettier": "^9",
-    "eslint-plugin-unicorn": "^56",
-    "prettier": "^3",
-    "prettier-plugin-tailwindcss": "^0"
   },
   "keywords": [
     "nextjs",
     "eslint",
-    "prettier",
-    "eslint-config",
     "eslint-plugin",
+    "eslint-config",
     "eslint-config-prettier",
-    "eslint-plugin-unicorn",
-    "prettier-plugin-tailwindcss"
+    "prettier",
+    "codestyle",
+    "config"
   ]
 }
