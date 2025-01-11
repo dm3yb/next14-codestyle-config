@@ -1,6 +1,5 @@
 {
   "name": "@dm3yb/nextjs-codestyle-config",
-  "private": "true",
   "version": "0.0.1",
   "description": "This package contains the ESLint and Prettier configuration for modern Next.js projects.",
   "main": "index.js",
@@ -12,6 +11,10 @@
   },
   "author": "Dmitry Bobryshev (dm3yb)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dm3yb/nextjs-codestyle-config.git"
+  },
   "prettier": "./prettier.config.js",
   "eslintConfig": {
     "extends": "./eslint.config.js"
