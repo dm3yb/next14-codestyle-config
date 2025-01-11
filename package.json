@@ -4,13 +4,17 @@
   "description": "This package contains the ESLint and Prettier configuration for modern Next.js v14 projects.",
   "main": "index.js",
   "scripts": {
-    "semantic-release": "semantic-release"
+    "release": "semantic-release"
   },
-  "author": "Dmitry Bobryshev (dm3yb)",
+  "author": "Dmitry Bobryshev <dmitry.b09@gmail.com> (https://dm3yb.dev)",
   "license": "MIT",
+  "homepage": "https://github.com/dm3yb/nextjs-codestyle-config#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dm3yb/nextjs-codestyle-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dm3yb/nextjs-codestyle-config/issues"
   },
   "publishConfig": {
     "access": "public",
@@ -20,17 +24,26 @@
     "index.js",
     "README.md"
   ],
-  "devDependencies": {
+  "eslintConfig": {
+    "extends": "./index.js"
+  },
+  "dependencies": {
     "@next/eslint-plugin-next": "^14.2.13",
-    "eslint": "^8.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.37.3",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-unicorn": "^56.0.1",
+    "prettier-plugin-tailwindcss": "^0.6.9"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
     "prettier": "^3.4.2",
-    "prettier-plugin-tailwindcss": "^0.6.9",
     "semantic-release": "^24.2.1"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": ">= 3.3.3"
   },
   "keywords": [
     "nextjs",
