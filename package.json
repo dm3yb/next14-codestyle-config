@@ -1,0 +1,45 @@
+{
+  "name": "@dm3yb/nextjs-codestyle-config",
+  "private": "true",
+  "version": "0.0.1",
+  "description": "This package contains the ESLint and Prettier configuration for modern Next.js projects.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "next lint",
+    "prettier:fix": "prettier --write --ignore-unknown .",
+    "prettier:check": "prettier --check --ignore-unknown .",
+    "codestyle:test": "lint && prettier:check"
+  },
+  "author": "Dmitry Bobryshev (dm3yb)",
+  "license": "MIT",
+  "prettier": "./prettier.config.js",
+  "eslintConfig": {
+    "extends": "./eslint.config.js"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^15.1.4",
+    "eslint": "^8",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-unicorn": "^56.0.1",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9"
+  },
+  "peerDependencies": {
+    "@next/eslint-plugin-next": "^15",
+    "eslint": "^8",
+    "eslint-config-prettier": "^9",
+    "eslint-plugin-unicorn": "^56",
+    "prettier": "^3",
+    "prettier-plugin-tailwindcss": "^0"
+  },
+  "keywords": [
+    "nextjs",
+    "eslint",
+    "prettier",
+    "eslint-config",
+    "eslint-plugin",
+    "eslint-config-prettier",
+    "eslint-plugin-unicorn",
+    "prettier-plugin-tailwindcss"
+  ]
+}
